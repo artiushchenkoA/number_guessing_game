@@ -8,3 +8,6 @@ some amount of attempts based on chosen difficulty level
 
 `number_gessing.py`: contains the main program
 `run.sh`: contains bash script to run the program in linux terminal 
+
+### Related project
+https://roadmap.sh/projects/number-guessing-game
