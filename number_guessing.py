@@ -44,15 +44,18 @@ def evaluate_input(number, difficulty):
             sys.exit()
     if count > difficulty:
         print('You lost.')
-        sys.exit()
 
 
 def main():
-    difficulty = select_difficulty()
-    print(difficulty)
-    number = set_random_number()
-    evaluate_input(number, difficulty)
-    
+    while True: 
+        difficulty = select_difficulty()
+        number = set_random_number()
+        evaluate_input(number, difficulty)
+
+        play_again = input("Would you like to start over? (y /n): ").strip().lower()
+        if play_again != 'yes':
+            print('Bye.')
+            sys.exit()
     
 
 if __name__ == '__main__':
